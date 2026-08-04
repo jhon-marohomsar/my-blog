@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Design Blog | Jhon Armand P. Marohomsar</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <header>
+
+        <div class="container nav-container">
+
+            <h2 class="logo">JPM<span>.</span></h2>
+
+          <nav>
+
+    <ul>
+
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#blog">Blog</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+  <button id="sidebarToggle">☰</button>
+
+<aside class="blog-sidebar" id="sidebar">
+
+    <h3>Contents</h3>
+
+    <ul>
+        <li><a href="#introduction">📌 Introduction</a></li>
+        <li><a href="#issues">⚠️ What Went Wrong</a></li>
+        <li><a href="#containment">🚨 Short-Term Containment</a></li>
+        <li><a href="#redesign">🔒 Long-Term Secure Design</a></li>
+        <li><a href="#privacy">⚖️ RA No. 10173</a></li>
+        <li><a href="#reflection">💭 Reflection</a></li>
+        <li><a href="#contact">📞 Contact</a></li>
+    </ul>
+
+</aside>
+        </div>
+
+    </header>
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero" id="home">
+
+        <div class="container hero-content">
+
+            <div class="hero-text">
+
+                <h4>Hello, I'm</h4>
+
+                <h1>Jhon Armand P. Marohomsar</h1>
+
+                <h3>BS Information Technology Student</h3>
+
+                <p>
+                    Welcome to my personal technical blog. As an Information
+                    Technology student, I am passionate about software
+                    development, cybersecurity, and responsible software
+                    engineering. This article reflects on a real-world security
+                    scenario and discusses how developers can balance rapid
+                    software development with the responsibility of protecting
+                    users' personal information.
+                </p>
+
+                <a href="#blog" class="btn">
+                    Read Featured Blog
+                </a>
+
+            </div>
+
+            <div class="hero-image">
+
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+                    alt="Cyber Security">
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <p class="about-text">
+
+                My name is <strong>Jhon Armand P. Marohomsar</strong>, a Bachelor
+                of Science in Information Technology student with an interest in
+                software engineering, cybersecurity, database systems, and web
+                application development. Through this blog, I explore secure
+                software development practices, ethical programming, and the
+                importance of protecting users' privacy. As technology evolves,
+                developers must understand that writing functional code is only
+                one part of building quality software. Equally important is
+                ensuring that applications are secure, reliable, and designed to
+                safeguard the information entrusted to them.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ================= BLOG ================= -->
+
+    <section id="blog">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Featured Technical Blog
+            </h2>
+
+            <div class="blog-card">
+
+                <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1200&q=80"
+                    alt="Cybersecurity">
+
+                <div class="blog-content">
+
+                    <h2>
+                        Shipping Fast Without Breaking Trust:
+                        Lessons in Secure Design from an AI-Assisted Student Application
+                    </h2>
+
+                    <p class="date">
+                        July 2026 • Cybersecurity • Secure Software Design
+                    </p>
+
+                   <h3 id="introduction">Introduction</h3>
+                
+                    <p>
+
+                        Modern artificial intelligence tools have changed the
+                        way software is developed. AI coding assistants can
+                        generate APIs, database models, authentication systems,
+                        and user interfaces within minutes. For students and
+                        developers participating in hackathons, these tools make
+                        it possible to transform an idea into a working
+                        prototype in only a few days. However, producing
+                        functional software is very different from producing
+                        secure software. When developers prioritize speed over
+                        security, the result may be an application that appears
+                        successful but exposes sensitive information to serious
+                        risks.
+
+                    </p>
+
+                    <p>
+
+                        The scenario presented in this case demonstrates exactly
+                        this problem. Three university students built a mobile
+                        and web platform that helped student organizations
+                        manage memberships, collect event fees, and share files.
+                        By relying heavily on an AI coding assistant, they
+                        completed a working prototype in less than seventy-two
+                        hours and even won recognition during a hackathon.
+                        Encouraged by the success, student organizations began
+                        using the application to manage real operations.
+
+                    </p>
+
+                    <p>
+
+                        What started as a demonstration quickly became
+                        production software that stored hundreds of students'
+                        personal information, including names, student numbers,
+                        phone numbers, identification cards, payment
+                        screenshots, and private conversations. Unfortunately,
+                        the developers never changed their mindset from "build a
+                        prototype" to "operate a secure production system."
+                        This oversight resulted in several critical security
+                        weaknesses that violated fundamental Secure Design
+                        Principles and placed users' privacy at risk.
+
+                    </p>
+
+                    <!-- CONTINUE IN PART 2 -->            
+                          <h3 id="issues">What Went Wrong</h3>
+
+                    <p>
+                        The application's biggest weakness was that it was
+                        treated as a finished product simply because it worked.
+                        The developers focused on implementing features quickly,
+                        but they did not perform a security review before real
+                        users began storing personal information in the system.
+                        As more organizations adopted the platform, the amount
+                        of sensitive data increased, yet the application's
+                        security remained at the same prototype level.
+                    </p>
+
+                    <p>
+                        The first major issue involved broken authorization.
+                        Users could modify the number at the end of a profile
+                        URL and immediately view another student's personal
+                        record. This vulnerability is known as an Insecure
+                        Direct Object Reference (IDOR). The application checked
+                        whether a user was logged in but failed to verify
+                        whether the user actually had permission to access the
+                        requested resource.
+                    </p>
+
+                    <p>
+                        This violated the Secure Design Principle of
+                        <strong>Complete Mediation</strong>. Every request should
+                        be validated before access is granted. Authorization is
+                        not something that should happen only during login. Each
+                        request must confirm that the authenticated user owns or
+                        is authorized to access the requested information.
+                    </p>
+
+                    <p>
+                        Another serious problem was the exposure of sensitive
+                        credentials through the project's public GitHub
+                        repository. Database passwords and payment API keys were
+                        stored directly in the source code and committed into
+                        version control. Anyone viewing the repository could
+                        potentially obtain full access to backend services.
+                    </p>
+
+                    <p>
+                        This violated the principles of
+                        <strong>Secure Defaults</strong> and
+                        <strong>Least Privilege</strong>. Secrets should never
+                        be hardcoded into source code. Instead, credentials
+                        should be stored securely using environment variables or
+                        a secrets management service. Furthermore, each service
+                        should only receive the minimum permissions necessary to
+                        perform its specific tasks.
+                    </p>
+
+                    <p>
+                        The application also configured every account with broad
+                        database read permissions. Instead of restricting users
+                        to their own records, database queries could access
+                        almost every student's information. This violated the
+                        principle of <strong>Least Privilege</strong>, which
+                        states that users, applications, and services should
+                        receive only the minimum level of access necessary to
+                        complete their responsibilities.
+                    </p>
+
+                    <p>
+                        Error handling created another significant security
+                        problem. When unexpected errors occurred, the
+                        application displayed complete stack traces directly in
+                        the browser. These messages exposed internal file names,
+                        framework details, and backend implementation
+                        information that attackers could use to identify
+                        additional vulnerabilities.
+                    </p>
+
+                    <p>
+                        Displaying detailed error information violated the
+                        principle of <strong>Fail Secure</strong>. Secure
+                        systems should fail safely by providing generic error
+                        messages to users while recording detailed information
+                        only in protected server logs accessible to
+                        administrators.
+                    </p>
+
+                    <p>
+                        Communication between users and the server occurred over
+                        plain HTTP instead of HTTPS. This meant sensitive data,
+                        including login credentials and uploaded identification
+                        documents, could potentially be intercepted over
+                        unsecured networks.
+                    </p>
+
+                    <p>
+                        Operating without encrypted communication violated the
+                        principle of <strong>Defense in Depth</strong>. Security
+                        should rely on multiple protective layers, including
+                        transport encryption, secure authentication,
+                        authorization, logging, monitoring, and network
+                        protections.
+                    </p>
+
+                    <p>
+                        Finally, the developers believed that hiding the
+                        application's internal URLs would discourage attackers.
+                        This assumption represented a classic example of
+                        security through obscurity.
+                    </p>
+
+                    <p>
+                        This violated the principle of
+                        <strong>Open Design</strong>, which emphasizes that
+                        systems should remain secure even when their design is
+                        publicly known. True security depends on strong access
+                        controls, secure authentication, encryption, and proper
+                        authorization—not on keeping URLs or implementation
+                        details secret.
+                    </p>
+
+                    <h3>Secure Design Principles Violated</h3>
+
+                    <ul>
+
+                        <li>
+                            <strong>Complete Mediation</strong> – Every request
+                            should verify authorization before granting access.
+                            The application failed to perform ownership checks
+                            on profile requests, allowing unauthorized access to
+                            student records.
+                        </li>
+
+                        <li>
+                            <strong>Least Privilege</strong> – Database users
+                            and application accounts received excessive
+                            permissions, increasing the impact of any compromise.
+                        </li>
+
+                        <li>
+                            <strong>Secure Defaults</strong> – Sensitive
+                            credentials were embedded directly into source code
+                            instead of secure environment variables.
+                        </li>
+
+                        <li>
+                            <strong>Fail Secure</strong> – Stack traces exposed
+                            internal implementation details instead of failing
+                            safely.
+                        </li>
+
+                        <li>
+                            <strong>Defense in Depth</strong> – The application
+                            relied on a single layer of protection while lacking
+                            HTTPS, monitoring, proper authorization, and secure
+                            secret management.
+                        </li>
+
+                        <li>
+                            <strong>Open Design</strong> – Developers assumed
+                            hidden URLs would protect the application rather
+                            than implementing proper security controls.
+                        </li>
+
+                    </ul>
+
+                    <!-- CONTINUE IN PART 3 -->
+                            <h3 id="containment"> Short-Term Containment: The First Hours and Days</h3>
+
+                    <p>
+                        Once the vulnerabilities were confirmed, the highest
+                        priority should be preventing further exposure of
+                        students' personal information. The first step would be
+                        to immediately take the application offline to stop
+                        unauthorized access while an investigation is conducted.
+                        This action restores the principle of
+                        <strong>Fail Secure</strong> because the system fails in
+                        a way that protects data instead of continuing to expose
+                        it.
+                    </p>
+
+                    <p>
+                        The next action would be rotating all compromised
+                        credentials, including the database password and payment
+                        API keys. Since these secrets were publicly available in
+                        the GitHub repository, they should be considered
+                        compromised even if there is no evidence they were used.
+                        New credentials should replace the old ones immediately.
+                        This restores the principles of
+                        <strong>Secure Defaults</strong> and
+                        <strong>Least Privilege</strong>.
+                    </p>
+
+                    <p>
+                        The development team should also remove secrets from the
+                        repository, rewrite Git history if necessary, and move
+                        all confidential information into environment variables
+                        or a secure secrets manager. Simply deleting the files
+                        is not enough because Git preserves previous commits.
+                    </p>
+
+                    <p>
+                        Another immediate priority is implementing proper
+                        authorization checks. Every request for user profiles,
+                        uploaded documents, payment records, and organization
+                        files should verify that the authenticated user has
+                        permission to access the requested resource. This
+                        restores the principle of
+                        <strong>Complete Mediation</strong>.
+                    </p>
+
+                    <p>
+                        The application should also disable detailed error
+                        messages in production. Users should receive generic
+                        messages such as "An unexpected error occurred," while
+                        detailed stack traces should only be written to secure
+                        server logs for administrators. This restores
+                        <strong>Fail Secure</strong>.
+                    </p>
+
+                    <p>
+                        Finally, the development team should notify the faculty
+                        adviser and affected student organizations about the
+                        incident. Transparency is essential when personal data
+                        may have been exposed. System logs should be reviewed to
+                        determine whether unauthorized access occurred before
+                        the application is restored.
+                    </p>
+
+                   <h3 id="redesign">Long-Term Secure Design Improvements</h3>
+
+                    <p>
+                        After immediate containment, the focus should shift to
+                        rebuilding the application with security integrated into
+                        every stage of development rather than added as an
+                        afterthought. The first improvement would be adopting
+                        Role-Based Access Control (RBAC). Different users such
+                        as students, organization officers, and administrators
+                        should have clearly defined permissions based on their
+                        responsibilities. This reinforces
+                        <strong>Least Privilege</strong>.
+                    </p>
+
+                    <p>
+                        Authentication and authorization should be separated.
+                        Logging in proves who the user is, while authorization
+                        determines what the user is allowed to access. Every API
+                        endpoint should verify both identity and permission,
+                        ensuring that ownership checks occur on every request.
+                        This reinforces <strong>Complete Mediation</strong>.
+                    </p>
+
+                    <p>
+                        All communication between users and the server should be
+                        protected using HTTPS with TLS encryption. Encryption
+                        safeguards login credentials, uploaded identification
+                        cards, payment screenshots, and private conversations
+                        from interception. This strengthens
+                        <strong>Defense in Depth</strong>.
+                    </p>
+
+                    <p>
+                        Sensitive credentials should never be stored inside the
+                        application's source code. Instead, developers should
+                        use environment variables or dedicated secrets
+                        management tools. Access to production credentials
+                        should be limited to authorized personnel only. This
+                        restores <strong>Secure Defaults</strong> and
+                        <strong>Least Privilege</strong>.
+                    </p>
+
+                    <p>
+                        The application should also implement secure logging,
+                        regular backups, monitoring, and automated alerts.
+                        Failed login attempts, unusual account activity, and
+                        repeated authorization failures should trigger security
+                        notifications so administrators can respond quickly.
+                        These measures strengthen
+                        <strong>Defense in Depth</strong>.
+                    </p>
+
+                    <p>
+                        Input validation should be implemented on both the
+                        client and server. Every uploaded file, form input, and
+                        request parameter should be validated to reduce the risk
+                        of malicious input and application abuse. This supports
+                        <strong>Economy of Mechanism</strong> by keeping
+                        validation simple, consistent, and centralized.
+                    </p>
+
+                    <p>
+                        Security should also become part of the software
+                        development lifecycle. Code reviews, penetration
+                        testing, dependency scanning, and vulnerability
+                        assessments should occur before every production
+                        release. AI-generated code should never be accepted
+                        without careful human review because AI focuses on
+                        generating functional solutions rather than guaranteeing
+                        secure ones.
+                    </p>
+
+                    <h3 id="privacy">Developer Responsibilities Under RA No. 10173</h3>
+                    <p>
+                        The Philippines' <strong>Republic Act No. 10173</strong>,
+                        also known as the <strong>Data Privacy Act of 2012</strong>,
+                        establishes the responsibility of organizations and
+                        developers to protect personal information. The student
+                        application stored names, student numbers, phone
+                        numbers, identification cards, payment screenshots, and
+                        private conversations. All of these are forms of
+                        personal information that must be processed responsibly.
+                    </p>
+
+                    <p>
+                        As developers, our design decisions directly affect the
+                        privacy of every user. Choosing to skip authorization
+                        checks, exposing credentials, or ignoring encryption can
+                        place hundreds of individuals at unnecessary risk.
+                        Secure software design is therefore not simply a
+                        technical requirement—it is also an ethical and legal
+                        responsibility. Following secure design principles helps
+                        developers comply with the objectives of the Data
+                        Privacy Act by protecting confidentiality, integrity,
+                        and availability of personal data.
+                    </p>
+
+                   <h3 id="reflection">Reflection and Conclusion</h3>
+
+                    <p>
+                        This scenario demonstrates that software can appear
+                        successful while still being dangerously insecure. The
+                        application achieved rapid adoption because it solved a
+                        real problem for student organizations, but its success
+                        also increased the consequences of poor security
+                        decisions. Winning a hackathon or delivering features
+                        quickly should never be mistaken for producing software
+                        that is ready to handle sensitive personal information.
+                    </p>
+
+                    <p>
+                        AI coding assistants are valuable tools that can
+                        significantly improve developer productivity, generate
+                        boilerplate code, and accelerate learning. However,
+                        developers remain fully responsible for verifying the
+                        security, correctness, and privacy implications of the
+                        generated code. AI can suggest implementation details,
+                        but it cannot replace careful design, professional code
+                        review, or ethical decision-making.
+                    </p>
+
+                    <p>
+                        As a future Information Technology professional, this
+                        case reminds me that every software project carries a
+                        responsibility to protect the people who trust it.
+                        Building quickly is important, especially during
+                        hackathons and academic projects, but protecting user
+                        data is even more important. Secure design should never
+                        be viewed as an optional feature added after deployment.
+                        Instead, it must be treated as a fundamental requirement
+                        from the very beginning of the software development
+                        process. By applying Secure Design Principles,
+                        performing proper security testing, and respecting the
+                        obligations established by RA No. 10173, developers can
+                        build systems that earn users' trust while protecting
+                        their privacy and personal information.
+
+                    </p>
+
+                    <h3>References</h3>
+
+                    <ul>
+                        <li>Saltzer, J. H., & Schroeder, M. D. (1975). The Protection of Information in Computer Systems.</li>
+                        <li>OWASP Foundation. OWASP Top 10 Web Application Security Risks.</li>
+                        <li>Republic Act No. 10173 – Data Privacy Act of 2012.</li>
+                        <li>National Privacy Commission (Philippines).</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTINUE IN PART 4 -->
+         <!-- ================= CONTACT ================= -->
+
+    <section id="contact">
+
+        <div class="container">
+
+            <h2 class="section-title">
+                Contact
+            </h2>
+
+            <div class="contact-box">
+
+                <p>
+                    <i class="fa-solid fa-user"></i>
+                    <strong>Jhon Armand P. Marohomsar</strong>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Bachelor of Science in Information Technology
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    Student Developer | Web Development | Cybersecurity
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    jhon.marohomsar@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <p>
+                &copy; 2026 Jhon Armand P. Marohomsar. All Rights Reserved.
+            </p>
+
+            <p>
+                This website was created as an academic requirement for
+                Secure Software Design. The featured article discusses
+                secure software engineering principles, AI-assisted
+                development, and the responsibilities of developers under
+                the Philippine Data Privacy Act of 2012 (RA No. 10173).
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
